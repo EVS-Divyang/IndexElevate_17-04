@@ -257,6 +257,50 @@
                             </div>
                             <div class="widget">
                                 <!-- Second Block -->
+                                 <div class="form-section widget_card" data-section="Strategy_Builder">
+                                        <div class="form-heading">
+                                            <div class="widgetheader__icon ">
+                                                <svg viewBox="0 0 24 24" fill="none">
+                                                    <path d="M12 8.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z"
+                                                        stroke="white" stroke-opacity=".85"></path>
+                                                    <path
+                                                        d="M12 2.5v3M12 18.5v3M3.5 12h3M17.5 12h3M5.2 5.2l2.1 2.1M16.7 16.7l2.1 2.1M18.8 5.2l-2.1 2.1M7.3 16.7l-2.1 2.1"
+                                                        stroke="white" stroke-opacity=".45" stroke-linecap="round">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            Strategy Builder
+                                            <span class="expand-collapse"><img src="images/accordion.svg"></span>
+                                        </div>
+                                        <div class="form-body container-fluid mt-3 mb-3 widget_cardContainer pb-2">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="dot"></div>
+                                                    <label class="form-label">Strategy Type</label>
+                                                    <select class="form-select cust-selectdropdown custom-select select_parms" data-key="Strategy_type" data-param="strategy_type">
+                                                        <option selected disabled >Select Option</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="dot"></div>
+                                                    <label class="form-label">Reference to Existing Ticker</label>
+                                                    <select class="form-select cust-selectdropdown custom-select select_parms"
+                                                        aria-label="Default select example" data-key="Reference_to_Existing_Ticker" data-key="reference_to_existing_ticker"> 
+                                                        <option selected disabled>Select Option</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                                <div class="col-3 pt-4 d-flex align-items-center justify-content-start">
+                                                    <button type="button" class="btn btn-primary btn-form mt-1"
+                                                        id="openSidebar4">
+                                                        View Logic
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 <div class="form-section widget_card" data-section="Strategy_Parameters">
                                     <div class="form-heading" >
                                         <div class="widgetheader__icon ">
@@ -288,7 +332,7 @@
                                                     <select class="js-example-basic-multiple custom-select select_parms"
                                                         name="calc-holiday-calendar" multiple="multiple"
                                                         style="height:32px !important;" data-key="Calc_Holiday_Calender" data-param="calc_holiday_calendar">
-                                                        <option></option>
+                                                        <option selected disabled>NYSE</option>
                                                     
                                                     
                                                     </select>
@@ -6916,49 +6960,7 @@
                                     </div>
 
                                     <!-- first Block -->
-                                    <div class="form-section widget_card" data-section="Strategy_Builder">
-                                        <div class="form-heading">
-                                            <div class="widgetheader__icon ">
-                                                <svg viewBox="0 0 24 24" fill="none">
-                                                    <path d="M12 8.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z"
-                                                        stroke="white" stroke-opacity=".85"></path>
-                                                    <path
-                                                        d="M12 2.5v3M12 18.5v3M3.5 12h3M17.5 12h3M5.2 5.2l2.1 2.1M16.7 16.7l2.1 2.1M18.8 5.2l-2.1 2.1M7.3 16.7l-2.1 2.1"
-                                                        stroke="white" stroke-opacity=".45" stroke-linecap="round">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            Strategy Builder
-                                            <span class="expand-collapse"><img src="images/accordion.svg"></span>
-                                        </div>
-                                        <div class="form-body container-fluid mt-3 mb-3 widget_cardContainer pb-2">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <div class="dot"></div>
-                                                    <label class="form-label">Strategy Type</label>
-                                                    <select class="form-select cust-selectdropdown custom-select select_parms" data-key="Strategy_type" data-param="strategy_type">
-                                                        <option selected disabled >Select Option</option>
-                                                        
-                                                    </select>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="dot"></div>
-                                                    <label class="form-label">Reference to Existing Ticker</label>
-                                                    <select class="form-select cust-selectdropdown custom-select select_parms"
-                                                        aria-label="Default select example" data-key="Reference_to_Existing_Ticker" data-key="reference_to_existing_ticker"> 
-                                                        <option selected disabled>Select Option</option>
-                                                        
-                                                    </select>
-                                                </div>
-                                                <div class="col-3 pt-4 d-flex align-items-center justify-content-start">
-                                                    <button type="button" class="btn btn-primary btn-form mt-1"
-                                                        id="openSidebar4">
-                                                        View Logic
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
 
                                     <!-- Third Block -->
                                     <div class="form-sep"></div>
@@ -7315,6 +7317,7 @@
                                 </div>
                                 <div class="widget">
                                     <!-- first Block -->
+                                     
                                     <div class="form-section widget_card" data-section="Strategy_Parameters">
                                         <div class="form-heading">
                                             <div class="widgetheader__icon ">
@@ -8106,7 +8109,7 @@
                                     </div>
                                     <div class="ticker-info">
                                         <span class="company">S&P 500</span>
-                                        <span class="value">6913.35 <span class="increase">+0.55%</span></span>
+                                        <span class="value">7091 <span class="increase">+0.55%</span></span>
 
                                     </div>
                                     <div class="ticker-updown">
@@ -8119,7 +8122,7 @@
                                     </div>
                                     <div class="ticker-info">
                                         <span class="company">Nikkei 225</span>
-                                        <span class="value">453,846 <span class="increase">+0.68%</span></span>
+                                        <span class="value">58,476 <span class="increase">+0.68%</span></span>
 
                                     </div>
                                     <div class="ticker-updown">
@@ -8132,7 +8135,7 @@
                                     </div>
                                     <div class="ticker-info">
                                         <span class="company">Nasdaq-100</span>
-                                        <span class="value">23518.35<span class="increase">+1.26%</span></span>
+                                        <span class="value">26,511<span class="increase">+1.26%</span></span>
 
                                     </div>
                                     <div class="ticker-updown">
@@ -8170,7 +8173,7 @@
                                     </div>
                                     <div class="ticker-info">
                                         <span class="company">Shanghai Composite</span>
-                                        <span class="value">4,136.16<span class="increase">+0.33%</span></span>
+                                        <span class="value">4051<span class="increase">+0.33%</span></span>
                                     </div>
                                     <div class="ticker-updown">
                                         <img src="images/green-up.svg">
@@ -9306,7 +9309,7 @@ if __name__ == '__main__':
     <div class="modal-content bg-dark text-light">
 
       <div class="modal-header" style="background: linear-gradient(135deg, #313a4b, #011025);">
-        <h5 class="modal-title">Processing…</h5>
+        <h5 class="modal-title">Calculation in Progress</h5>
       </div>
 
       <div class="modal-body" style="background: linear-gradient(135deg, #313a4b, #011025);">

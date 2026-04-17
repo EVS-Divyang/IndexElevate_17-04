@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pure JS</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+  <style>
+    .filter-btn {
+      margin: 0 10px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #E8E9EB;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .active-btn {
+      background: #301934;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 900px; margin: 40px auto;">
+    <div style="text-align: right; margin-bottom: -10px">
+      <button class="filter-btn" onclick="setFilter('6M')">6M</button>
+      <button class="filter-btn" onclick="setFilter('1Y')">1Y</button>
+      <button class="filter-btn" onclick="setFilter('5Y')">5Y</button>
+      <button class="filter-btn active-btn" onclick="setFilter('ALL')">ALL</button>
+    </div>
+
+    <canvas id="myChart" height="120"></canvas>
+  </div>
+
+  <script src="./chart.js"></script>
+</body>
+</html>

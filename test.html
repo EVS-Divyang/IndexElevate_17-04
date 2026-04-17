@@ -1,0 +1,53 @@
+<select class="form-select custom-select" id="parentOptionType" name="parentOptionType">
+    <option value="" selected>Please Select</option>
+    <option value="index-option">Index Option</option>
+    <option value="currency-option">Currency Option</option>
+    <option value="treasury-option">Treasury Option</option>
+    <option value="single-stock-option">Single Stock Option</option>
+    <option value="vix">VIX</option>
+    <option value="etf-option">ETF Option</option>
+</select>
+<select class="form-select custom-select" id="childOptionType" name="childOptionType">
+    <option value="" selected>Please Select</option>
+</select>
+
+<script>
+    (function () {
+        var parentSelect = document.getElementById("parentOptionType");
+        var childSelect = document.getElementById("childOptionType");
+
+        var optionMap = {
+            "index-option": ["SPX", "NDX", "STOXX"],
+            "currency-option": ["EURUSD", "GBPUSD", "USDJPY"],
+            "treasury-option": ["TY", "FB", "US"],
+            "single-stock-option": ["AAPL", "MSFT", "GOOG"],
+            "vix": ["VIX", "VNKY", "V2X"],
+            "etf-option": ["SPY", "QQQ", "IWM"]
+        };
+
+        function populateChildOptions(parentValue) {
+            childSelect.innerHTML = "";
+
+            var placeholderOption = document.createElement("option");
+            placeholderOption.value = "";
+            placeholderOption.textContent = "Please Select";
+            placeholderOption.selected = true;
+            childSelect.appendChild(placeholderOption);
+
+            if (!optionMap[parentValue]) {
+                return;
+            }
+
+            optionMap[parentValue].forEach(function (item) {
+                var option = document.createElement("option");
+                option.value = item.toLowerCase();
+                option.textContent = item;
+                childSelect.appendChild(option);
+            });
+        }
+
+        parentSelect.addEventListener("change", function () {
+            populateChildOptions(parentSelect.value);
+        });
+    })();
+</script>

@@ -1,0 +1,2111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "FSAlbert Bold";
+    src: url('fonts/FSAlbert-Bold.eot');
+    src: url('fonts/FSAlbert-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FSAlbert-Bold.svg#Brandon Grotesque Regular') format('svg'),
+        url('fonts/FSAlbert-Bold.woff') format('woff'),
+        url('fonts/FSAlbert-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Albert';
+    src: url("fonts/FSAlbert-Regular.eot");
+    src: url('fonts/FSAlbert-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FSAlbert-Regular.woff') format('woff'),
+        url('fonts/FSAlbert-Regular.ttf') format('truetype'),
+        url('fonts/FSAlbert-Regular.svg#FSAlbert') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Albert Light';
+    src: url("fonts/FSAlbert-Light.eot");
+    src: url('fonts/FSAlbert-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FSAlbert-Light.woff') format('woff'),
+        url('fonts/FSAlbert-Light.ttf') format('truetype'),
+        url('fonts/FSAlbert-Light.svg#FSAlbert') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px rgb(0 0 0 / 15%);
+    z-index: 1;
+    position: relative;
+}
+
+.header-v2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 25px;
+    box-shadow: 1px 1px 7px rgb(0 0 0 / 15%);
+    z-index: 3;
+    width: 100%;
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    min-height: 61px;
+    background-size: cover;
+    transition: background 0.3s ease;
+}
+
+.header-blur {
+    backdrop-filter: blur(42px);
+    z-index: 10;
+}
+
+.btn-header {
+    cursor: pointer;
+    width: 150px;
+    background-color: transparent;
+    height: 40px;
+    display: inline-flex;
+    position: absolute;
+    right: 44px;
+    top: 10px;
+    border-radius: 16px;
+}
+
+.btn-default {
+    background-color: #3265AA;
+    font-size: 14px;
+    border-radius: 16px;
+    padding: 5px 27px;
+    list-style: normal;
+    font-family: 'FS Albert';
+}
+
+.btn-login {
+    background-color: #453C79;
+    border-color: #453C79;
+    text-transform: uppercase;
+}
+
+.btn-login:hover {
+    background-color: #352e64;
+    border-color: #352e64;
+}
+
+.btn-form {
+    background-color: #7D77A2;
+    font-size: 14px;
+    border-radius: 16px;
+    padding: 3px 27px 4px 27px;
+    list-style: normal;
+    font-family: 'FS Albert';
+    border-color: #7D77A2;
+}
+
+.btn-plain {
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 16px;
+    padding: 5px 27px;
+    list-style: normal;
+    font-family: 'FS Albert';
+    border-color: #453C79;
+    color: #453C79;
+}
+
+.btn-submit {
+    background-color: #453C79;
+    font-size: 14px;
+    border-radius: 16px;
+    padding: 5px 27px;
+    list-style: normal;
+    font-family: "FSAlbert Bold";
+    border-color: #453C79;
+    color: #ffffff;
+}
+
+.btn-form:hover {
+    background-color: #454f68;
+    border-color: #454f68;
+}
+
+.form-sep {
+    background-color: #E3E3E3CC;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.heroSection {
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.heroSectionContent {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.heroSectionContent h1 {
+    font-size: 28px;
+    color: white;
+    font-family: 'FS Albert';
+    text-align: center;
+    margin: 0;
+}
+
+.heroSectionContent h2 {
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    font-family: 'FSAlbert Bold';
+    text-align: center;
+    color: #cca66f;
+    background-image: linear-gradient(90deg, #FFB774 0%, #F68DFF 47%, #0261FD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 36px;
+}
+
+.heroSectionContent>p {
+    font-size: 18px;
+    font-family: 'FS Albert Light';
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+.card-holder {
+    display: flex;
+    gap: 16px;
+}
+
+.ecard {
+    border-radius: 36px;
+    width: 100%;
+    padding: 16px 16px 0px 16px;
+    background-image: url(../images/card-1-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ecard h3 {
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.ecard>p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #606062;
+    font-weight: 400;
+}
+
+.card-shadow {
+    backdrop-filter: blur(50px);
+    width: 100%;
+    height: 32px;
+}
+
+.contentSection {
+    width: 100%;
+    background-color: #3F254B;
+    padding: 24px 0;
+}
+
+.contentSection>h1 {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: Roboto;
+    color: #fff;
+    text-align: center;
+}
+
+.contentSection>p {
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.slider {
+    display: flex;
+}
+
+.indices {
+    padding: 20px 0;
+}
+
+.indices>h1 {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: Roboto;
+    color: #333333;
+    text-align: center;
+}
+
+.indices>p {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #606062;
+}
+
+.indices-data {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 424px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px 0px #11111112, 0px 1px 4px 0px #11111112;
+    border-radius: 34px;
+    padding: 20px;
+    display: flex;
+}
+
+.indices-data-left {
+    width: 30%;
+    padding-top: 5px;
+}
+
+.indices-data-right {}
+
+.indices-info {
+    font-size: 16px;
+    color: #606062;
+    font-family: 'FS Albert';
+    padding: 0 36px 0 0;
+}
+
+.ddropdown {
+    background-image: url(../images/drodpdown-bg.png);
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.download {
+    font-size: 14px;
+    color: #0261FD;
+    text-decoration: none;
+    display: inline-flex;
+    gap: 4px;
+}
+
+footer {
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'FS Albert';
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.30);
+    justify-content: space-between;
+    padding: 12px 24px;
+    align-items: center;
+        backdrop-filter: blur(60px);
+}
+
+.btn-colored {
+    background: #BF3145;
+    border-color: #BF3145;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 5px 27px;
+    list-style: normal;
+    font-family: 'FS Albert';
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.btn-fixed {
+    position: fixed;
+    right: 4px;
+    bottom: 24px;
+    z-index: 10;
+}
+
+.loginwrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.loginwrapper-left {
+    width: 50%;
+}
+
+.loginwrapper-right {
+    width: 50%;
+}
+
+.loginform {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-title {
+    font-family: "FSAlbert Bold";
+    font-size: 22px;
+}
+
+.loginbg {
+    background-image: url(../images/login-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-control-reset {
+    border-color: transparent !important;
+    padding: .375rem 0 !important;
+
+}
+
+.form-control-reset:focus {
+    box-shadow: none;
+}
+
+.login-form-group {
+    background: #fff;
+    box-shadow: 0 1px 6px #00000026;
+    padding: .25rem 1.25rem;
+    border-radius: 2px;
+    position: relative;
+    border-left: 3px solid #E0044E;
+}
+
+.form-label-custom {
+    font-size: 13px;
+    color: #333333;
+    font-family: 'FS Albert';
+}
+
+.form-control-reset {
+    color: #33333380;
+    font-size: 13px;
+    font-family: 'FS Albert';
+    padding: .10rem 0 !important;
+}
+
+.loginform {
+    font-size: 14px;
+    font-family: 'FS Albert';
+}
+
+/* Sidebar and Dashboard Page */
+.sidebar {
+    background-color: #191D27;
+    width: 64px;
+    min-width: 64px;
+
+}
+
+.sidebar ul {
+    margin: 0 0 0 10px;
+    padding: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar ul li {
+    position: relative;
+    padding: 8px 0;
+    cursor: pointer;
+
+}
+
+.sidebar ul li .nav-side {
+    background-repeat: no-repeat;
+    padding: 6px 8px 12px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background .6s ease-out;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+
+.sidebar ul li:hover .nav-side {
+    background-color: #fff;
+}
+
+.sidebar.expanded ul li:not(:first-child):hover {
+    background-color: #fff;
+}
+
+.sidebar.expanded ul li.active {
+    background-color: #fff;
+}
+
+.sidebar.expanded ul li.active .nav-lable {
+    color: #191D27;
+}
+
+.sidebar ul li:hover .nav-side svg path {
+    fill: #191D27;
+}
+
+.sidebar ul li.active .nav-side {
+    background-color: #fff;
+}
+
+.sidebar ul li.active .nav-side svg path {
+    fill: #191D27;
+}
+
+/* .sidebar.expanded ul li:hover::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 104%;
+    height: 175%;
+    background-color: #F3F0F0;
+} */
+
+.anglesvg {
+    transition: transform 0.3s ease;
+}
+
+.sidebar.expanded .nav-lable {
+    display: inline-block;
+    /* show when expanded */
+}
+
+.anglesvg.rotate {
+    transform: rotate(180deg);
+    /* flip the arrow */
+}
+
+.nav-lable {
+    display: none;
+    font-size: 16px;
+    color: #CDCDCD;
+    font-family: 'FS Albert';
+}
+
+.sidebar.expanded ul li:hover svg path,
+.sidebar.expanded ul li:hover .nav-lable {
+    color: #191D27;
+    fill: #191D27;
+    vertical-align: middle;
+}
+
+.inner-page {
+    min-height: 90vh;
+}
+
+.contentAreaMid {
+    display: flex;
+}
+
+.contents {}
+
+.widget {
+    border: 1px solid #E3E3E3;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px #00000029;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.contentAreaTop {
+    background-color: #f6e1e8;
+    display: flex;
+}
+
+.contentAreaTop-left {
+    background-color: #E0044ECC;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: "FSAlbert Bold";
+    color: #fff;
+    position: relative;
+}
+
+.contentAreaTop-left::after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #E0044ECC;
+    border-width: 12px;
+    margin-top: -12px;
+}
+
+.contentAreaTop-right {
+    padding: 10px 14px 10px 24px;
+    font-size: 14px;
+    font-family: 'FS Albert';
+    color: #333;
+}
+
+.filterBlock {
+    width: 100%;
+    display: flex;
+    background-color: #454f68;
+    border: 1px solid #454f68;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'FS Albert';
+    padding: 12px;
+}
+
+.filterBlock2 {
+    width: 100%;
+    display: flex;
+    background-color: #454F68E5;
+    border: 1px solid #454F68E5;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'FS Albert';
+    padding: 8px 12px;
+}
+
+.filterBlocktab {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.filterBlocktab li {
+    border: 1px solid #6b82a6;
+    color: #D4D4D4;
+    padding: 2px 12px;
+    border-right: 0;
+    cursor: pointer;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.filterBlocktab li:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.filterBlocktab li:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-right: 1px solid #6b82a6;
+}
+
+.filterBlocktab li:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.filterBlocktab li.active {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+.filterBlocktab li:hover svg path {
+    fill: #fff;
+}
+.filterBlocktab li.active svg path {
+    fill: #fff;
+}
+.filterBlock h4 {
+    font-size: 14px;
+    font-family: "FSAlbert Bold";
+}
+
+.add-filter {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contentAreaMid {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.contentAreaMid-right {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.font-bold {
+    font-family: "FSAlbert Bold";
+}
+
+.font-regular {
+    font-size: 14px;
+    font-family: 'FS Albert';
+}
+
+.form-check-input:checked {
+    background-color: #2196F3;
+    border-color: #ffffff;
+}
+
+.form-check-input:focus {
+    border-color: #d8dbde;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input {
+    width: 2.75em !important;
+    height: 1.5em;
+}
+
+.ticketScroller {
+    list-style: none;
+    margin: 0;
+    padding: 0 22px;
+    min-width: 252px;
+}
+
+.ticker {
+    padding: 0;
+}
+
+.ticker h5 {
+    font-family: "FSAlbert Bold";
+    font-size: 16px;
+}
+
+.tickerItem {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: background .6s ease-out;
+}
+
+li.tickerItem:before {
+    content: "";
+    position: absolute;
+    width: 108%;
+    left: -3%;
+    top: 0;
+    height: 108%;
+    z-index: -1;
+    border-radius: 4px;
+    transition: background .3s ease-out;
+}
+
+li.tickerItem:hover:before {
+    background: #fff;
+}
+
+.tickerItem::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #E3E3E3CC;
+    bottom: -10px;
+}
+
+.ticker-logo {
+    width: 42px;
+    height: 42px;
+    line-height: 36px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px #0000000D;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.ticker-info {
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 6px;
+    justify-items: start;
+    cursor: pointer;
+}
+
+.ticker-info .company {
+    grid-column: 1 / -1;
+    /* company spans full width (first line) */
+}
+
+.ticker-info .company {
+    font-size: 14px;
+    font-family: "FSAlbert Bold";
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ticker-info .value {
+    font-size: 12px;
+    font-family: "FSAlbert Bold";
+    color: #333333CC;
+}
+
+.ticker-updown {
+    margin-left: auto;
+}
+
+.ticker-info .increase {
+    font-size: 12px;
+    font-family: 'FS Albert';
+    color: #00C853;
+    margin-left: 10px;
+}
+
+.ticker-info .decrease {
+    font-size: 12px;
+    font-family: 'FS Albert';
+    color: #FF3B30;
+    margin-left: 10px;
+}
+
+.form-heading {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    padding: 0 0 0 24px;
+    font-family: "FSAlbert Bold";
+    line-height: 26px;
+}
+
+.form-heading::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background-color: #E42F6C;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    left: 8px;
+}
+
+.custom-select {}
+
+.form-select {
+    font-size: 12px;
+    font-family: 'FS Albert';
+    padding: 3px 8px;
+}
+
+.form-select:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+.widgetCTA {
+    box-shadow: 0px 0px 8px 0px #00000029;
+    display: flex;
+    padding: 10px 12px;
+    background-color: #fff;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+}
+
+.cta2 {
+    background-image: url(../images/button-book.png);
+    background-repeat: no-repeat;
+    width: 278px;
+    height: 127px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+}
+.cta2:hover {
+    transform: scale(1.08);
+}
+
+.nav-link-tab {
+    color: #D4D4D4;
+}
+
+.nav-link-tab:focus,
+.nav-link-tab:hover {
+    color: #D4D4D4;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #454F68;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link {
+    border: transparent;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.tab-content:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #75809D;
+    height: 1px;
+}
+
+.tab-content {
+    position: relative;
+    width: 100%;
+    padding: 14px 0;
+}
+
+.sidebar-header.d-flex {
+    padding: 10px 14px;
+    border-bottom: 1px solid #D3DAE6;
+    justify-content: space-between;
+}
+
+#closeSidebar {
+    cursor: pointer;
+}
+
+.sidebar-title {
+    font-family: "FSAlbert Bold";
+    font-size: 16px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    border-radius: 6px;
+    border: 1px solid #7D77A2;
+    color: #7D77A2;
+    padding: 6px 12px;
+    font-family: 'FS Albert';
+    font-size: 14px;
+}
+
+.tagsInner {
+    display: block;
+}
+
+.tagsInner span {
+    border-radius: 6px;
+    border: 1px solid #7D77A2;
+    color: #7D77A2;
+    padding: 4px 8px;
+    font-family: 'FS Albert';
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.tags span:hover {
+    background-color: #2196f3;
+    border-color: #2196f3;
+    color: #ffffff;
+}
+
+.tags span.selected {
+    background-color: #2196f3;
+    border-color: #2196f3;
+    color: #ffffff;
+}
+
+.divider-row {
+    border-bottom: 1px solid #CCCCCCCC;
+}
+
+.autosave {
+    position: fixed;
+    right: -220px;
+    /* off-screen initially */
+    top: 62px;
+    z-index: 10;
+    width: 184px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    border-radius: 5px;
+    color: #141414;
+    font-size: 14px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #9bddaa;
+    opacity: 0;
+    transition: right 0.5s ease, opacity 0.5s ease;
+}
+
+.autosave.show {
+    right: 62px;
+    /* slide in */
+    opacity: 1;
+}
+
+.form-control {
+    font-size: 12px;
+    font-family: 'FS Albert';
+    color: rgba(0, 0, 0, 0.8);
+    height: 30px;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-label {
+    font-size: 12px;
+    color: #707070;
+    margin-bottom: 2px;
+    font-family: 'FS Albert';
+}
+
+.expand-collapse {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.container-fluid.hidden {
+    display: none;
+}
+
+.form-heading.collapsed .expand-collapse img {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.table.custom-table {
+    border-collapse: collapse;
+    /* merge borders */
+    width: 100%;
+    font-family: 'FS Albert';
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.table.custom-table th,
+.table.custom-table td {
+    border: 1px solid #CCCCCC;
+    padding: 6px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.table.custom-table thead th {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.table.custom-table2 {
+    border-collapse: collapse;
+    /* merge borders */
+    width: 100%;
+    font-family: 'FS Albert';
+    font-size: 13px;
+    border-radius: 4px;
+    table-layout: auto;
+}
+
+.table.custom-table2 th,
+.table.custom-table2 td {
+    border: 1px solid #B9B9B9;
+    padding: 6px;
+    text-align: left;
+    font-weight: normal;
+    background-color: transparent !important;
+    height: 30px;
+}
+
+.table.custom-table2 thead th {
+    background-color: transparent !important;
+    text-align: center;
+    color: #F5F5F5;
+    font-family: "FSAlbert Bold";
+}
+
+.nav-tabs2 .nav-item.show .nav-link {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 14px;
+}
+
+.nav-tabs2 .nav-link.active {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-tabs2 .nav-link:focus,
+.nav-tabs2 .nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-tabs2 .nav-link {
+    color: #D4D4D4;
+    padding: 3px 0;
+    margin: 0 16px;
+}
+
+.nav-tabs2 .nav-link:first-child {
+    margin-left: 0;
+}
+
+.tab-content2:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    height: 1px;
+}
+
+/* By Nisha */
+.panel span {
+    color: #ffffff;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "FSAlbert Bold";
+    font-size: 14px;
+}
+
+.input-group {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    height: 28px;
+}
+
+.customRadio {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.customRadio .form-check-input {
+    width: 16px !important;
+    height: 16px;
+}
+
+.input-group-text {
+    color: #f5f5f5;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #cccccc;
+    font-size: 14px;
+    padding: 1px 10px;
+    height: 24px;
+}
+
+.input-group input[type="text"] {
+    color: #f5f5f5;
+}
+
+.input-group input[type="text"]:focus {
+    box-shadow: none;
+}
+
+.input-group input[type="text"]::placeholder {
+    font-size: 14px;
+    color: rgba(245, 245, 245, 0.5);
+}
+
+.input-group .form-control {
+    background-color: transparent;
+    border: none;
+    height: 28px;
+}
+
+.custom-form-select {
+    background-color: transparent;
+    color: #f5f5f5;
+    font-size: 14px;
+    height: 32px;
+    padding: 5px 10px;
+    appearance: none;
+    /* Remove default styling */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 16px;
+}
+
+.input-group-text.Multi-Selection {
+    width: 60px;
+}
+
+
+.form-control-filter::placeholder {
+    color: #f5f5f5 !important;
+    font-size: 12px !important;
+}
+
+.form-control-filter {
+    color: #f5f5f5 !important;
+    font-size: 12px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-family: "FSAlbert Bold";
+    color: #333333;
+}
+
+.heading.subHeading {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.loginform .form-check-input:checked {
+    background-color: #80b78c;
+    border-color: #679571;
+}
+
+.loginform .form-check-input {
+    width: 1.55em !important;
+    height: 1.5em;
+    margin-right: 7px;
+}
+
+.filterText {
+    font-size: 13px;
+    color: #F5F5F5;
+    font-family: 'FS Albert';
+    margin-bottom: 1rem;
+}
+
+.table.custom-table3 {
+    border-collapse: collapse;
+    /* merge borders */
+    width: 100%;
+    font-family: 'FS Albert';
+    font-size: 13px;
+    border-radius: 4px;
+    table-layout: auto;
+}
+
+.table.custom-table3 th,
+.table.custom-table3 td {
+    border: 1px solid #75809d;
+    padding: 6px;
+    text-align: left;
+    font-weight: normal;
+    background-color: transparent !important;
+    height: 30px;
+}
+
+.table.custom-table3 thead th {
+    background-color: transparent !important;
+    text-align: center;
+    color: #F5F5F5;
+    font-family: "FSAlbert Bold";
+}
+
+#uploaduniversebtn>span {
+    background-color: #fff;
+    border-radius: 6px;
+    background-image: url(../images/uploadicon.svg);
+    background-repeat: no-repeat;
+    padding: 7px 48px 7px 12px;
+    color: #343741;
+    font-size: 14px;
+    display: inline-block;
+    background-position: 142px 8px;
+    cursor: pointer;
+}
+
+#downloadbtn a {
+    font-size: 13px;
+    color: #F5F5F5;
+    font-family: 'FS Albert';
+    text-decoration: underline;   
+}
+.panel .custom-form-select option {
+    color: #333;
+}
+
+.form-operator {
+    max-width: 95px;
+    border: 0;
+}
+
+.mwid-60 {
+    min-width: 60px;
+}
+
+.panel * {
+    font-size: 12px;
+}
+
+.customRadio {
+    margin-right: 6px;
+}
+
+.form-operator {
+    padding: 3px 10px !important;
+    height: 27px;
+}
+
+
+/* Homepage New */
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    padding-top: 70px;
+    /* offset for header */
+}
+
+/* Section 1 with video background */
+.section1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.section1 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* behind content */
+}
+
+.section1 .content-top {
+    position: absolute;
+    left: 22px;
+    top: 36px;
+    z-index: 1;
+}
+
+.content-top h1 {
+    font-size: 36px;
+    line-height: 62px;
+    color: white;
+    font-family: 'FS Albert';
+    margin-bottom: 7px;
+    letter-spacing: -1.98px;
+}
+
+.content-top h2 {
+    font-size: 48px;
+    color: white;
+    margin: -5px 0 -2px 0;
+    font-family: 'FSAlbert Bold';
+    text-align: left;
+    color: #cca66f;
+    background-image: linear-gradient(90deg, #FFB774 0%, #F68DFF 47%, #0261FD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 52px;
+    letter-spacing: -1.98px;
+}
+
+.content-top .homedesc {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+        /* max-width: 67%; */
+}
+
+.button-content {
+    background-image: url(../images/btn-2bg.png);
+    width: 195px;
+    height: 41px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    margin-top: 8px;
+}
+.button-content:hover {
+    transform: scale(1.08);
+}
+.section1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.content-bottom {
+    display: flex;
+    position: absolute;
+    top: 360px;
+    right: 36px;
+    gap: 26px;
+}
+
+.content-bottom .card-new {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/card-bg.png);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: 'FS Albert';
+    align-items: flex-start;
+    width: 222px;
+    height: 130px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth animation */
+    position: relative;
+    overflow: hidden;
+}
+
+.card-border {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.border-stroke {
+  stroke-width: 2;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  transition: stroke-dashoffset 1s linear;
+}
+
+/* animate on hover */
+.card-new:hover .border-stroke {
+  stroke-dashoffset: 0;
+}
+.card-container:hover .card-new:not(:hover) {
+  transform: scale(0.95);
+  opacity: 0.9;
+}
+.card-new:hover {
+  transform: translateY(-3px) scale(1.10);
+  z-index: 2;
+}
+.content-bottom .card-new-title {
+    font-family: 'FS Albert';
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.section2 {
+    position: relative;
+    background-color: rgb(0 15 38 / 100%);
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    height: calc(100vh + 120px);
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* .section2::before {
+    content: "";
+    position: absolute;
+    top: -106px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000f26;
+    z-index: -1;
+} */
+
+.bg-filler {
+    background-color: rgb(0 15 38 / 100%);
+    width: 100%;
+    height: 70px;
+    margin-top: -242px;
+}
+@media only screen and (max-width: 1366px) {
+    .bg-filler {
+        margin-top: -174px;
+    }
+}
+
+.section2 .content-1 {
+    left: 25px;
+    max-width: 64%;
+    position: absolute;
+}
+
+.section2 .content-1 h3 {
+    font-size: 44px;
+    line-height: 72px;
+    font-family: "FSAlbert Bold";
+    font-weight: normal;
+}
+.section2 .content-1 h3 span {
+    font-family: 'FS Albert Light';
+}
+.section2 .content-1 p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'FS Albert';
+}
+
+.check {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.section3 {
+    position: relative;
+    background-color: rgb(0 15 38 / 100%);
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -98px;
+}
+
+.indices-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.indices-content h1 {
+    font-size: 44px;
+    line-height: 72px;
+    color: #fff;
+    font-family: "FSAlbert Bold";
+    letter-spacing: -1.98px;
+}
+
+.indices-content p {
+    font-family: 'FS Albert';
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+.ai-enabled {
+    background-image: url(../images/ai-enabled.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+}
+.chart {
+    width: 68%;
+    background-image: url(../images/chart-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 465px;
+    padding: 20px;
+    margin-left: -60px;
+    border-radius: 16px;
+}
+.ai-enabled-data {
+    width: 28%;
+}
+.ai-enabled-data  h4 {
+    font-family: "FSAlbert Bold";
+font-size: 48px;
+line-height: 72px;
+letter-spacing: -1.98px;
+color: rgba(255, 255, 255, 0.4);
+
+}
+.btn-download {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.btn-download:hover {
+    transform: scale(1.10); 
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Nitish Css */
+/* Multiple Select Dropdown style */
+ .ms {position: relative; }
+ .ms__trigger {
+    display: flex; align-items: center; gap: 8px;
+    width: 100%;
+    height: 26px;              
+   padding: 3px 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .ms__trigger:focus {
+    outline: none;
+  }
+ 
+  /* Chips container stays single-line; no wrapping */
+  .ms__chips {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex: 1 1 auto;
+    overflow: hidden;      
+    white-space: nowrap;
+  }
+ 
+  .ms__placeholder {
+    color: #000;
+    font-size: 12px;
+    line-height: 24px;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+ 
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 5px;
+    font-size: 12px; line-height: 16px;
+    border-radius: 0.375rem;
+    background: transparent;
+    color: #000;
+    border: 1px solid #d0d7de;
+    max-width: 58px;
+  }
+  .chip__label {
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;width:50px;
+  }
+  .chip__remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #000;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .chip__remove:hover { background: transparent; }
+ 
+  /* "+N more" chip */
+  .chip.more {
+    background: #f1f5f9; color: #0f172a; border-color: #e5e7eb;
+    max-width: none;
+  }
+ 
+  .ms__arrow {
+    width: 16px; height: 16px; opacity: 0.8; flex: 0 0 auto;
+    transition: transform 160ms ease;
+  }
+  .ms.open .ms__arrow { transform: rotate(180deg); }
+ 
+  /* Dropdown menu */
+  .ms__menu {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: var(--shadow);
+    z-index: 20;
+  }
+  .ms:not(.open) .ms__menu { display: none; }
+ 
+  .ms__list { list-style: none; margin: 0; padding: 0; max-height: 220px; overflow: auto; }
+  .ms__option {
+    padding: 4px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    font-size: 12px;
+    color:#000;
+  }
+  .ms__option:hover { background: #0d6efd;
+                      color:#fff;
+                    }
+  .ms__option[aria-selected="true"]
+  { background: #0d6efd;
+    color: #fff;
+  }
+ 
+  .filterLabel {
+    color: #fff;
+  }
+  .rebalance-block {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+  
+.pane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The pill container */
+.browse-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height:26px;
+  width: 219px;                    /* adjust as needed */
+  background: #fff;
+  color: #2d3340;
+  border: 1px solid #d7dbe3;
+  border-radius: 12px;
+  padding: 10px 14px;
+  border-radius: .375rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  cursor: pointer;
+  user-select: none;
+
+  /* smooth feel */
+  transition: box-shadow 180ms ease, transform 120ms ease, border-color 180ms ease;
+}
+
+/* Text style */
+.browse-text {
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+}
+
+/* Upload icon style */
+.browse-icon {
+  width: 22px;
+  height: 22px;
+  color: #6b7280;                 /* gray icon */
+}
+
+/* Hover/active/focus */
+.browse-pill:hover {
+  border-color: #c7ccd6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.browse-pill:active {
+  transform: translateY(1px);
+}
+
+.browse-pill:focus {
+  outline: 2px solid #93c5fd;      /* focus ring (for keyboard users) */
+  outline-offset: 2px;
+}
+
+/* Make label focusable like a button */
+.browse-pill {
+  /* Allow keyboard focus on label */
+  -webkit-tap-highlight-color: transparent;
+}
+.browse-pill:has(+ .visually-hidden:focus-visible) {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* Hide the native file input but keep it accessible */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.datepicker {
+    font-size: 14px;
+    padding: 16px;
+}
+.input-daterange {
+    background: #fff;
+    color: #444;
+    line-height: 26px;
+}
+.rangeControl {
+    color: #444 !important;
+    text-align: left !important;
+}
+.select2-container {
+    font-size: 12px;
+    width: 100% !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #ccc;
+    padding: 0 3px;
+    color: #404040;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid rgb(222, 226, 230) 1px;
+    border-radius: 6px;
+}
+.select2-container--default .select2-selection--multiple {
+    padding-bottom: 2px;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: #4373c0;
+    color: #fff;
+}
+.select2-container .select2-selection--multiple {
+    min-height: 29px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    font-weight: normal;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: -6px;
+    position: absolute;
+    right: 0;
+    padding: 1px;
+    font-size: 22px;
+    color: #404040;
+}
+a#closeSidebar2, a#closeSidebar3 {
+    cursor: pointer;
+}
+.ai-icon {
+    position: absolute;
+    height: auto;
+    top: 43px;
+    left: 268px;
+}
+.ai-icon svg path {
+    /* fill: #fff; */
+}
+
+/* for Chatbot */
+.promtBox {
+    font-size: 14px;
+    color: #404040 !important;
+}
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    /* full height look */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.chat-message {
+    margin-bottom: 1rem;
+}
+
+.chat-message.user {
+    text-align: left;
+}
+
+.chat-message.response {
+    text-align: right;
+}
+
+.chat-input {
+    border-top: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.chat-input .input-group {
+    border-radius: 16px !important;
+}
+
+.is-disabled {
+    pointer-events: none;
+    opacity: 0.75;
+}
+.customselected {display: none;}
+.isCustom {
+    display: none;
+}
+.showCustom {
+    display: flex;
+    align-items: flex-end;
+}
+.rbal-title {
+    font-family: "FSAlbert Bold";
+}
+.filter-btn {
+    margin: 0 6px 0 0;
+    padding: 4px 11px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #E8E9EB;
+    font-family: 'FS Albert';
+    font-size: 13px;
+}
+.active-btn {
+    background: rgba(0, 15, 38, 0.9);
+    color: white;
+}
+.chart-filter {
+    text-align: right;
+    margin-bottom: 24px;
+}
+.section4 {
+    position: relative;
+    background-color: rgb(0 15 38 / 90%);
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.section4Wrapper {
+    background-color: rgba(12, 25, 47, 0.6);
+    border-radius: 12px;
+    padding: 4px 16px 16px 16px;
+    border: 2px solid rgba(51, 63, 77, 1);
+    box-shadow: 0px 0px 20px 0px rgba(226, 47, 108, 0.1);
+}
+.section4Wrapper-header {
+    border-bottom: 2px solid rgba(226, 47, 108, 0.2);
+    justify-content: space-between;
+    align-items: center;
+}
+.section4Title {
+    font-size: 18px;
+    color: rgba(245, 245, 245, 0.95);
+    font-family: 'FS Albert';
+    height: 60px;
+    overflow: hidden;
+    margin: 0;
+}
+.section4Title strong {
+    font-family: "FSAlbert Bold";
+    font-weight: normal;
+}
+/* Tabs section */
+.tab-container {
+  display: flex;
+  gap: 8px; /* space between tabs */
+  margin-bottom: 16px;
+}
+
+.tab-btn {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(58, 66, 84, 0.25);
+  border: 2px solid rgba(51, 63, 77, 1);
+  color: rgba(204, 204, 204, 0.8);
+  font-family: "FSAlbert Bold";
+  font-size: 13px;
+}
+
+.tab-btn.active {
+  border: 2px solid rgba(228, 47, 108, 1);
+  box-shadow: 0px 0px 12px 0px rgba(226, 47, 108, 0.3);
+  color: rgba(228, 47, 108, 1);
+  background: rgba(226, 47, 108, 0.2);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+.newsCard {
+    background: rgba(58, 66, 84, 0.25);
+    border-top: 4px solid rgba(228, 47, 108, 1);
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+.newsCard-body h4 {
+    font-family: "FSAlbert Bold";
+    font-size: 13px;
+    color: rgba(227, 227, 227, 1);
+}
+.newsCard-body h4 a {
+    color: rgba(227, 227, 227, 1);
+    text-decoration: none;
+}
+.newsCard-body p {
+    font-family: 'FS Albert';
+    font-size: 11px;
+    color: rgba(204, 204, 204, 0.8);   
+}
+.newsCard-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.newsCard-headerTag {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: "FSAlbert Bold";
+    padding: 3px 6px;
+    border-radius: 8px;
+}
+.type1 {
+    color: rgba(228, 47, 108, 1);
+    background-color: rgba(228, 47, 108, 0.2);
+}
+.type2 {
+    color: rgba(0, 200, 83, 1);
+    background-color: rgba(0, 200, 83, 0.2);
+}
+.type3 {
+    color: rgba(255, 165, 0, 1);
+    background-color: rgba(255, 165, 0, 0.2);
+}
+.type4 {
+    color: rgba(226, 47, 108, 1);
+    background-color: rgba(226, 47, 108, 0.2);
+}
+.bdr-style1 {
+    border-top: 4px solid rgba(228, 47, 108, 1);
+}
+.bdr-style3 {
+    border-top: 4px solid rgba(0, 200, 83, 1);
+}
+.bdr-style3 {
+    border-top: 4px solid rgba(255, 165, 0, 1);
+}
+.bdr-style4 {
+    border-top: 4px solid rgba(226, 47, 108, 1);
+}
+.newsCard-headerTime {
+    font-family: 'FS Albert';
+    color: rgba(204, 204, 204, 0.6);
+    font-size: 10px;
+}
+
+.newsSlider .slick-slide {
+    margin: 0 10px;
+}
+.newsSlider .slick-list {
+    margin: 0 -10px;
+}
+
+
+.table.custom-table3 {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'FS Albert';
+    font-size: 13px;
+    border-radius: 4px;
+    table-layout: auto;
+}
+
+.table.custom-table3 th,
+.table.custom-table3 td {
+    border: 1px solid #B9B9B9;
+    padding: 6px;
+    text-align: left;
+    font-weight: normal;
+    background-color: transparent !important;
+    height: 30px;
+}
+
+.table.custom-table3 thead th {
+    background-color: transparent !important;
+    text-align: center;
+    color: #404040;
+    font-family: "FSAlbert Bold";
+    font-weight: bold;
+}

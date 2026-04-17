@@ -1,0 +1,367 @@
+<style>
+
+.carousel-container {
+	width: 100%;
+	height: 450px;
+	position: relative;
+	perspective: 1000px;
+    margin-left: 432px;
+}
+
+.carousel-track {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cardx {
+	position: absolute;
+	width: 280px;
+	height: 380px;
+	background: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+	transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	cursor: pointer;
+}
+
+.cardx img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cardx.center {
+	z-index: 10;
+	transform: scale(1.1) translateZ(0);
+}
+
+.cardx.center img {
+	filter: none;
+}
+
+.cardx.left-2 {
+	z-index: 1;
+	transform: translateX(-400px) scale(0.8) translateZ(-300px);
+	opacity: 0.7;
+}
+
+.cardx.left-2 img {
+	filter: grayscale(100%);
+}
+
+.cardx.left-1 {
+	z-index: 5;
+	transform: translateX(-200px) scale(0.9) translateZ(-100px);
+	opacity: 0.9;
+}
+.cardx.left-1 img {
+	filter: grayscale(100%);
+}
+
+.cardx.right-1 {
+	z-index: 5;
+	transform: translateX(200px) scale(0.9) translateZ(-100px);
+	opacity: 0.9;
+}
+
+.cardx.right-1 img {
+	filter: grayscale(100%);
+}
+.cardx.right-2 {
+	z-index: 1;
+	transform: translateX(400px) scale(0.8) translateZ(-300px);
+	opacity: 0.7;
+}
+.cardx.right-2 img {
+	filter: grayscale(100%);
+}
+.cardx.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.member-info {
+	text-align: left;
+	margin-top: 40px;
+	transition: all 0.5s ease-out;
+}
+.member-name {
+	color: rgb(8, 42, 123);
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline-block;
+}
+
+.member-name::before,
+.member-name::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	width: 100px;
+	height: 2px;
+	background: rgb(8, 42, 123);
+}
+.member-name::before {
+	left: -120px;
+}
+.member-name::after {
+	right: -120px;
+}
+.member-role {
+	color: #848696;
+	font-size: 1.5rem;
+	font-weight: 500;
+	opacity: 0.8;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 10px 0;
+	margin-top: -15px;
+	position: relative;
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 60px;
+}
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(8, 42, 123, 0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.dot.active {
+	background: rgb(8, 42, 123);
+	transform: scale(1.2);
+}
+.nav-arrows {
+    display: inline-flex;
+    width: 100px;
+    margin-left: 40%;
+    gap: 16px;
+}
+.nav-arrow {
+	background: rgba(8, 42, 123, 0.6);
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 20;
+	transition: all 0.3s ease;
+	font-size: 1.5rem;
+	border: none;
+	outline: none;
+	padding-bottom: 4px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-arrow:hover {
+	background: rgba(0, 0, 0, 0.8);
+	transform: scale(1.1);
+}
+.carousel {
+    display: flex;
+    width: 100%;
+}
+.carousel-left {
+    width: 25%;
+}
+.carousel-right {
+    width: 75%;
+}
+</style>
+<div class="carousel">
+    <div class="member-info carousel-left">
+        <h2 class="member-name">David Kim</h2>
+        <p class="member-role">Founder</p>
+    </div>
+    <div class="carousel-right">
+        <div class="carousel-container">
+	
+	<div class="carousel-track">
+		<div class="cardx" data-index="0">
+			<img src="images/slide-item-1.png">
+		</div>
+		<div class="cardx" data-index="1">
+			<img src="images/slide-item-2.png">
+		</div>
+		<div class="cardx" data-index="2">
+			<img src="images/slide-item-3.png">
+		</div>
+        <div class="cardx" data-index="3">
+			<img src="images/slide-item-1.png">
+		</div>
+		<div class="cardx" data-index="4">
+			<img src="images/slide-item-2.png">
+		</div>
+		<div class="cardx" data-index="5">
+			<img src="images/slide-item-3.png">
+		</div>
+		
+	</div>
+    <div class="nav-arrows">
+        <button class="nav-arrow left">‹</button>
+	    <button class="nav-arrow right">›</button>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<!-- <div class="dots">
+	<div class="dot active" data-index="0"></div>
+	<div class="dot" data-index="1"></div>
+	<div class="dot" data-index="2"></div>
+	<div class="dot" data-index="3"></div>
+	<div class="dot" data-index="4"></div>
+	<div class="dot" data-index="5"></div>
+</div> -->
+
+
+
+<script>
+    const teamMembers = [
+	{ name: "Custom Index Solutions That Drive Performance", role: "Transform ideas into investible strategies with our cutting-edge indexing platform. From concept to calculation, we deliver precision, scalability, and innovation." },
+	{ name: "Own the Entire Index Journey", role: "From rebalancing and reconstitution to advanced index analytics, centralized monitoring, and effortless publication—we deliver a seamless, end-to-end lifecycle management experience that ensures precision, transparency, and speed." },
+	{ name: "AI Fusion: Redefining the Indexing Experience", role: "Harness the power of Artificial Intelligence to transform every stage of your indexing lifecycle. Our AI-driven approach doesn’t just automate—it elevates." },
+    { name: "Custom Index Solutions That Drive Performance", role: "Transform ideas into investible strategies with our cutting-edge indexing platform. From concept to calculation, we deliver precision, scalability, and innovation." },
+	{ name: "Own the Entire Index Journey", role: "From rebalancing and reconstitution to advanced index analytics, centralized monitoring, and effortless publication—we deliver a seamless, end-to-end lifecycle management experience that ensures precision, transparency, and speed." },
+	{ name: "AI Fusion: Redefining the Indexing Experience", role: "Harness the power of Artificial Intelligence to transform every stage of your indexing lifecycle. Our AI-driven approach doesn’t just automate—it elevates." }
+    
+	
+];
+
+const cards = document.querySelectorAll(".cardx");
+const dots = document.querySelectorAll(".dot");
+const memberName = document.querySelector(".member-name");
+const memberRole = document.querySelector(".member-role");
+const leftArrow = document.querySelector(".nav-arrow.left");
+const rightArrow = document.querySelector(".nav-arrow.right");
+let currentIndex = 0;
+let isAnimating = false;
+
+function updateCarousel(newIndex) {
+	if (isAnimating) return;
+	isAnimating = true;
+
+	currentIndex = (newIndex + cards.length) % cards.length;
+
+	cards.forEach((card, i) => {
+		const offset = (i - currentIndex + cards.length) % cards.length;
+
+		card.classList.remove(
+			"center",
+			"left-1",
+			"left-2",
+			"right-1",
+			"right-2",
+			"hidden"
+		);
+
+		if (offset === 0) {
+			card.classList.add("center");
+		} else if (offset === 1) {
+			card.classList.add("right-1");
+		} else if (offset === 2) {
+			card.classList.add("right-2");
+		} else if (offset === cards.length - 1) {
+			card.classList.add("left-1");
+		} else if (offset === cards.length - 2) {
+			card.classList.add("left-2");
+		} else {
+			card.classList.add("hidden");
+		}
+	});
+
+	dots.forEach((dot, i) => {
+		dot.classList.toggle("active", i === currentIndex);
+	});
+
+	memberName.style.opacity = "0";
+	memberRole.style.opacity = "0";
+
+	setTimeout(() => {
+		memberName.textContent = teamMembers[currentIndex].name;
+		memberRole.textContent = teamMembers[currentIndex].role;
+		memberName.style.opacity = "1";
+		memberRole.style.opacity = "1";
+	}, 300);
+
+	setTimeout(() => {
+		isAnimating = false;
+	}, 800);
+}
+
+leftArrow.addEventListener("click", () => {
+	updateCarousel(currentIndex - 1);
+});
+
+rightArrow.addEventListener("click", () => {
+	updateCarousel(currentIndex + 1);
+});
+
+dots.forEach((dot, i) => {
+	dot.addEventListener("click", () => {
+		updateCarousel(i);
+	});
+});
+
+cards.forEach((card, i) => {
+	card.addEventListener("click", () => {
+		updateCarousel(i);
+	});
+});
+
+document.addEventListener("keydown", (e) => {
+	if (e.key === "ArrowLeft") {
+		updateCarousel(currentIndex - 1);
+	} else if (e.key === "ArrowRight") {
+		updateCarousel(currentIndex + 1);
+	}
+});
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener("touchstart", (e) => {
+	touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener("touchend", (e) => {
+	touchEndX = e.changedTouches[0].screenX;
+	handleSwipe();
+});
+
+function handleSwipe() {
+	const swipeThreshold = 50;
+	const diff = touchStartX - touchEndX;
+
+	if (Math.abs(diff) > swipeThreshold) {
+		if (diff > 0) {
+			updateCarousel(currentIndex + 1);
+		} else {
+			updateCarousel(currentIndex - 1);
+		}
+	}
+}
+
+updateCarousel(0);
+
+</script>
